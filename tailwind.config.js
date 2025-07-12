@@ -25,6 +25,9 @@ export default {
         primary: colors.amber[400],
         "primary-dark": colors.amber[500],
       },
+      boxShadow: {
+        top: "0px 0px 13px -5px black",
+      },
     },
   },
   plugins: [],
