@@ -22,11 +22,14 @@ export default {
     },
     extend: {
       colors: {
-        primary: colors.amber[400],
-        "primary-dark": colors.amber[500],
+        primary: colors.amber[500],
+        "primary-dark": colors.yellow[600],
+        "primary-bg": colors.zinc[50],
+        "secondary-bg": colors.white,
       },
+
       boxShadow: {
-        top: "0px 0px 13px -5px black",
+        top: "0px -5px 7  px rgba(0, 0, 0, 0.15)",
       },
     },
   },
