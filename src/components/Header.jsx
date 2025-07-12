@@ -25,7 +25,9 @@ export default function Header() {
           {navItems.map((link) => {
             return (
               <li key={link.href}>
-                <a href={link.href}>{link.label}</a>
+                <a className="font-medium text-base" href={link.href}>
+                  {link.label}
+                </a>
               </li>
             );
           })}
