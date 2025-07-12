@@ -1,12 +1,11 @@
 import { useState } from "react";
-import "./App.css";
 import Header from "./components/Header";
+import Home from "./components/Home";
 function App() {
   return (
     <>
-      <div className="container mx-auto px-8   h-full ">
-        <Header></Header>
-      </div>
+      <Header></Header>
+      <Home></Home>
     </>
   );
 }
