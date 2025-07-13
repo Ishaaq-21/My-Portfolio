@@ -5,7 +5,10 @@ function App() {
   return (
     <>
       <Header></Header>
-      <Home></Home>
+      <main className="w-full h-full">
+        {" "}
+        <Home></Home>
+      </main>
     </>
   );
 }
