@@ -26,8 +26,13 @@ export default {
         "primary-dark": colors.yellow[600],
         "primary-bg": colors.zinc[50],
         "secondary-bg": colors.white,
+        title: "hsl(0 ,0, 20%)",
+        "title-dark": "black",
+        "txt-col": "#2684ce",
       },
-
+      fontFamily: {
+        jetbrains: ['"JetBrains Mono"', "monospace"],
+      },
       boxShadow: {
         top: "0px -5px 7  px rgba(0, 0, 0, 0.15)",
       },
