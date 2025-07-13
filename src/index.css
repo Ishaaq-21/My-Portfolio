@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* jetBrain mono font */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
 #root {
   width: 100%;
   height: 100%;
@@ -12,6 +15,8 @@ body {
 }
 body {
   overflow: hidden;
+  font-family: "Inter", sans-serif;
+  @apply font-jetbrains;
 }
 nav a {
   transition: color;
