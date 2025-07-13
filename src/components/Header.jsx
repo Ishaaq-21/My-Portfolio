@@ -16,8 +16,8 @@ export default function Header() {
   }
 
   return (
-    <header className="shadow-top  md:shadow-none left-0 bottom-0 md:top-0  bg-secondary-bg fixed w-full">
-      <div className="container mx-auto px-4 md:px-8 flex justify-between items-center h-[45px] md:h-[70px]">
+    <header className="shadow-top  md:shadow-none left-0 bottom-0 md:top-0  bg-secondary-bg fixed w-full  h-[45px] md:h-[70px]">
+      <div className="container mx-auto px-4 md:px-8 flex justify-between items-center h-full">
         <p
           className={clsx(
             "font-semibold  text-lg md:text-2xl text-primary hover:text-primary-dark transition-colors duration-300",
