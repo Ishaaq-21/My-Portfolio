@@ -18,13 +18,6 @@ body {
   font-family: "Inter", sans-serif;
   @apply font-jetbrains;
 }
-nav a {
-  transition: color;
-  transition-duration: 0.3s;
-}
-nav a:hover {
-  color: #f59e0b;
-}
 
 .sub-title::before {
   content: "";
