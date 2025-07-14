@@ -28,7 +28,7 @@ export default {
         "secondary-bg": colors.white,
         title: "hsl(0 ,0, 20%)",
         "title-dark": "black",
-        "txt-col": "#2684ce",
+        subTitle: "#515151",
       },
       fontFamily: {
         jetbrains: ['"JetBrains Mono"', "monospace"],
