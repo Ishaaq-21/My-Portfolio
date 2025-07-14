@@ -21,7 +21,8 @@ export default {
     },
     extend: {
       colors: {
-        primary: colors.amber[500],
+        primary: "#f59e0b",
+        "primary-light": colors.amber[300],
         "primary-dark": colors.yellow[600],
         "primary-bg": colors.zinc[50],
         "secondary-bg": colors.white,
