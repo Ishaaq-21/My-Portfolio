@@ -31,7 +31,10 @@ export default function Header() {
             {navItems.map((link) => {
               return (
                 <li key={link.href}>
-                  <a className="font-medium text-base" href={link.href}>
+                  <a
+                    className="transition-colors duration-300 hover:text-primary font-medium text-base"
+                    href={link.href}
+                  >
                     {link.label}
                   </a>
                 </li>
@@ -70,7 +73,7 @@ export default function Header() {
                   <a
                     key={link.href}
                     href={link.href}
-                    className="w-full text-center font-medium text-sm sm:text-lg"
+                    className="w-full transition-colors duration-300 hover:text-primary text-center font-medium text-sm sm:text-lg"
                   >
                     <i
                       className={`uis ${link.icon} block text-lg sm:text-2xl mr-1 mb-1`}
