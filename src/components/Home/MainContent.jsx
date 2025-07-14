@@ -1,10 +1,15 @@
 export default function MainContent() {
   return (
     <div className="main-content order-2 md:order-1 lg:grow-[1] self-start md:self-auto ">
-      <div className="flex items-center gap-2 mb-2 lg:mb-5">
+      <div className="flex items-center gap-3  md:gap-24 lg:gap-12 mb-2 lg:mb-5 ">
         <h1 className="font-bold  text-3xl lg:text-5xl text-title font-poppins">
           Isaaq Hk
         </h1>
+        <img
+          src="/public/assets/hand.svg"
+          className="w-8 md:w-10 lg:w-12"
+          alt=""
+        />
       </div>
       <h3 className="sub-title relative before:content-none md:before:content-['']   md:ml-[95px] text-base md:text-lg lg:text-xl text-title font-semibold">
         Front-End Developer
