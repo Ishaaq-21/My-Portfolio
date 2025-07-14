@@ -25,3 +25,13 @@ nav a {
 nav a:hover {
   color: #f59e0b;
 }
+
+.sub-title::before {
+  content: "";
+  width: 70px;
+  height: 1px;
+  background-color: #00000094;
+  position: absolute;
+  top: 50%;
+  transform: translate(-90px, -50%);
+}
