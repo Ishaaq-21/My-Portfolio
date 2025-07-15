@@ -5,6 +5,9 @@
 /* jetBrain mono font */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
+.main-btn {
+  @apply block text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-xl px-5 py-5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2 transition duration-300 gap-4;
+}
 #root {
   width: 100%;
   height: 100%;
