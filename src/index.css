@@ -11,10 +11,8 @@
 }
 html,
 body {
-  height: 100vh;
 }
 body {
-  overflow: hidden;
   font-family: "Inter", sans-serif;
   @apply font-jetbrains;
 }
