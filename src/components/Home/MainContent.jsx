@@ -18,10 +18,7 @@ export default function MainContent() {
         I'm a creative developer passionate about building smart, responsive,
         and user-focused web experiences.
       </p>
-      <button
-        type="button"
-        className="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-xl text-base px-5 py-4 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2 transition duration-300 gap-3"
-      >
+      <button type="button" className="main-btn text-base">
         Say Hello
         <i
           className="uil uil-message block -rotate-45 text-2xl -mt-1"
