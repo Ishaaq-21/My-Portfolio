@@ -24,7 +24,7 @@ export default function Header() {
             isOpen && "hidden"
           )}
         >
-          <a href="/">Isaac</a>
+          <a href="/">Isaaq</a>
         </p>
         <nav className="hidden md:block">
           <ul className="flex justify-around gap-8 text-sm lg:text-lg">
