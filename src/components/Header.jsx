@@ -32,7 +32,7 @@ export default function Header() {
               return (
                 <li key={link.href}>
                   <a
-                    className="transition-colors duration-300 hover:text-primary font-medium text-base"
+                    className="transition-colors duration-300 hover:text-primary font-semibold text-sm"
                     href={link.href}
                   >
                     {link.label}
