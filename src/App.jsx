@@ -1,16 +1,26 @@
-import { useState } from "react";
 import Header from "./components/Header";
 import Home from "./components/Home/Home";
 import About from "./components/About";
+import Skills from "./components/Skills";
+import ClickSpark from "./blocks/Animations/ClickSpark/ClickSpark";
 function App() {
   return (
     <>
-      <Header></Header>
-      <main className="w-full h-full bg-primary-bg md:pt-[70px]">
-        {" "}
-        <Home></Home>
-        <About />
-      </main>
+      <ClickSpark
+        sparkColor="#f59e0b"
+        sparkSize={10}
+        sparkRadius={15}
+        sparkCount={8}
+        duration={400}
+      >
+        <Header></Header>
+        <main className="w-full h-full bg-primary-bg md:pt-[70px]">
+          {" "}
+          <Home></Home>
+          <About />
+          <Skills />
+        </main>
+      </ClickSpark>
     </>
   );
 }
