@@ -1,3 +1,7 @@
+import SectionHeader from "./SharedComponents/SectionHeader";
+import SectionWrapper from "./SharedComponents/SectionWrapper";
+import TiltedCard from "../blocks/Components/TiltedCard/TiltedCard";
+
 const cards = [
   {
     icon: "uil uil-suitcase",
@@ -19,18 +23,7 @@ function AboutCard({ icon, title, text }) {
     </li>
   );
 }
-function AboutHeader() {
-  return (
-    <div className="About-head mb-14">
-      <h1 className="text-title font-bold w-fit  mx-auto text-3xl lg:text-5xl">
-        About Me
-      </h1>
-      <h4 className="text-subTitle text-sm w-fit mx-auto mt-1">
-        My Introduction
-      </h4>
-    </div>
-  );
-}
+
 function AboutImg() {
   return (
     <div className="image w-56 md:w-64 lg:w-80  overflow-hidden rounded-3xl">
@@ -76,14 +69,12 @@ function AboutSubContent() {
 //The main Compo
 export default function About() {
   return (
-    <section id="About" className="about py-12 md:py-20 h-[100vh]">
-      <div className="container px-6 md:px-8 min-h-[100vh]">
-        <AboutHeader />
-        <div className="main-content flex flex-col lg:flex-row md:gap-x-16 lg:gap-x-28 items-center gap-y-10">
-          <AboutImg />
-          <AboutSubContent />
-        </div>
+    <SectionWrapper sectionName={"About"}>
+      <SectionHeader title={"About"} subTitle={"My Introduction"} />
+      <div className="main-content flex flex-col lg:flex-row md:gap-x-16 lg:gap-x-28 items-center gap-y-10">
+        <AboutImg />
+        <AboutSubContent />
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
