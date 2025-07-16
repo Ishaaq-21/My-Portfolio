@@ -29,10 +29,22 @@ body {
   top: 50%;
   transform: translate(-90px, -50%);
 }
-
+section.home .main-content .hand-container {
+  animation: handWave 2s ease-in-out infinite;
+}
+section.home .main-content .waving-hand {
+  transform-origin: center bottom;
+}
 /* Profile picture */
-.profile-pic {
+section.home .profile-pic {
   animation: profile-pic-animation 8s ease-in-out 1s infinite;
+}
+
+/* --------- End header ----------- */
+
+/* ---------------- Skills ------------------------ */
+section.Skills .skill-card {
+  @apply relative flex flex-col md:flex-row items-center text-center md:text-left gap-3 md:gap-5 items-center;
 }
 @keyframes profile-pic-animation {
   0% {
@@ -46,6 +58,15 @@ body {
   }
 }
 
-.Skills .skill-card {
-  @apply relative flex flex-col md:flex-row items-center text-center md:text-left gap-3 md:gap-5 items-center;
+@keyframes handWave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
 }

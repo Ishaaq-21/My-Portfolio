@@ -5,11 +5,13 @@ export default function MainContent() {
         <h1 className="font-bold  text-3xl lg:text-5xl text-title font-poppins">
           Isaaq Hk
         </h1>
-        <img
-          src="/public/assets/hand.svg"
-          className="w-8 md:w-10 lg:w-12"
-          alt=""
-        />
+        <div className="hand-container origin-center inline-block">
+          <img
+            src="/public/assets/hand.svg"
+            className="waving-hand w-8 md:w-10 lg:w-12"
+            alt=""
+          />
+        </div>
       </div>
       <h3 className="sub-title relative before:content-none md:before:content-['']   md:ml-[95px] text-base md:text-lg lg:text-xl text-title font-semibold">
         Front-End Developer
