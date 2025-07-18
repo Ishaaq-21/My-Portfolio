@@ -57,7 +57,14 @@ section.Skills .skill-card {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
-
+/*--------------------portfolio -----------*/
+section.Portfolio .project-card:hover > img {
+  transform: scale(1.3);
+}
+section.Portfolio .project-card:hover > .project-description {
+  opacity: 1;
+  visibility: visible;
+}
 @keyframes handWave {
   0%,
   100% {
