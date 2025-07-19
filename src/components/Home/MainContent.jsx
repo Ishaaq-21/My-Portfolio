@@ -13,7 +13,7 @@ export default function MainContent() {
           />
         </div>
       </div>
-      <h3 className="sub-title relative before:content-none md:before:content-['']   md:ml-[95px] text-base md:text-lg lg:text-xl text-title font-semibold">
+      <h3 className="sub-title relative  md:before:content-['']   md:ml-[95px] text-base md:text-lg lg:text-xl text-title font-semibold">
         Front-End Developer
       </h3>
       <p className="md:max-w-[300px] lg:max-w-[400px]  mt-5 mb-8 md:mb-10 text-subTitle text-sm lg:text-lg font-semibold">
