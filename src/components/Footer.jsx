@@ -29,6 +29,8 @@ export default function Footer() {
                 <a
                   href={socialAcc.href}
                   className={`text-4xl text-subTitle  transition duration-300 ${socialAcc.hoverColor}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className={socialAcc.icon}></i>
                 </a>
@@ -36,8 +38,9 @@ export default function Footer() {
             );
           })}
         </ul>
-        <p className="mx-auto w-fit text-center">
-          &copy; Isaaq Hk. All rights reserved.
+        <p className="mx-auto w-fit text-center text-sm md:text-base">
+          &copy; Isaaq <span className="text-primary">Hk</span>. All rights
+          reserved.
         </p>
       </div>
     </footer>
