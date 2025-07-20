@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import ClickSpark from "./blocks/Animations/ClickSpark/ClickSpark";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
           <Portfolio />
           <Contact />
         </main>
+        <Footer></Footer>
       </ClickSpark>
     </>
   );
