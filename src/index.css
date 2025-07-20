@@ -65,6 +65,21 @@ section.Portfolio .project-card:hover > .project-description {
   opacity: 1;
   visibility: visible;
 }
+/* ---------------- End Portfolio ---------------  */
+
+/* ------------ contact section -------------- */
+section.contact label {
+  position: absolute;
+  z-index: 1;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px;
+  background-color: #fafafa;
+  color: #777;
+  top: -14px;
+  left: 16px;
+}
+/* ------------ End contact section -------------- */
 @keyframes handWave {
   0%,
   100% {
