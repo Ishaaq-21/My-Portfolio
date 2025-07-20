@@ -6,7 +6,7 @@ import socialAccounts from "./SocialAccsData";
 import ContactForm from "./ContactForm";
 export default function Contact() {
   return (
-    <SectionWrapper sectionName={"contact"}>
+    <SectionWrapper sectionName={"Contact"}>
       <SectionHeader title={"Get In Touch"} subTitle={"Contact Me"} />
       <div className="grid grid-cols-1 md:grid-cols-2  justify-between lg:pt-10 gap-y-16 md:gap-y-0  md:gap-x-6">
         <div className="reach-out flex  flex-col items-center gap-y-5 ">
