@@ -42,7 +42,7 @@ export default function ContactForm() {
 
   return (
     <div className="contact flex flex-col  items-center gap-y-5">
-      <h2 className="text-subTitle font-bold text-2xl  mb-3 ">
+      <h2 className="text-subTitle font-bold text-xl md:text-2xl  mb-3 ">
         Submit Your Inquiry
       </h2>
       <form
@@ -91,14 +91,16 @@ export default function ContactForm() {
           field="inquiry"
           errors={state.errors}
         />
-        <button
-          type="submit"
-          disabled={state.submitting}
-          className={`main-btn`}
-        >
-          Send Message{" "}
-          <i className="uil uil-message block -rotate-45 text-2xl -mt-1"></i>
-        </button>
+        <div className="w-fit mx-auto md:mx-0">
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className={`main-btn`}
+          >
+            Send Message{" "}
+            <i className="uil uil-message block -rotate-45 text-2xl -mt-1"></i>
+          </button>
+        </div>
       </form>
       {state.succeeded && <CustomSnackBar opening={state.succeeded} />}
     </div>
