@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import ClickSpark from "./blocks/Animations/ClickSpark/ClickSpark";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
           <About />
           <Skills />
           <Portfolio />
+          <Contact />
         </main>
       </ClickSpark>
     </>
