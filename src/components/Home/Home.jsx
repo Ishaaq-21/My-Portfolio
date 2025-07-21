@@ -1,7 +1,6 @@
 import MainContent from "./MainContent";
 import MainImg from "./MainImage";
 import SocialLinks from "./SocialLinks";
-import ClickSpark from "../../blocks/Animations/ClickSpark/ClickSpark";
 
 export default function Home() {
   return (
