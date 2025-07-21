@@ -67,7 +67,7 @@ export default function Skills() {
   return (
     <SectionWrapper sectionName={"Skills"}>
       <SectionHeader title={"Skills"} subTitle={"Technical Skills"} />
-      <ul className="grid grid-cols-2 place-start-center md:grid-cols-[repeat(2,_minmax(0,_200px))] gap-y-8 gap-x-10 md:-gap-x-3 md:place-content-around bg-white border-4 rounded-xl border-primary/30 p-10 mx-auto ">
+      <ul className="grid grid-cols-2 place-start-center md:grid-cols-[repeat(2,_minmax(0,_200px))] gap-y-8 gap-x-10 md:-gap-x-3 md:place-content-around bg-white dark:bg-slate-900 border-4 rounded-xl border-primary/80 p-10 mx-auto ">
         {skills.map((skill) => {
           return (
             <SkillCard
@@ -96,10 +96,10 @@ function SkillCard({ icon, skillName, level }) {
         loading="lazy"
       />
       <div className="">
-        <h3 className="text-base md:text-lg md:-mt-3 font-semibold">
+        <h3 className="text-base dark:text-zinc-100 md:text-lg md:-mt-3 font-semibold">
           {skillName}
         </h3>
-        <span className="block md:hidden mt-1 text-subTitle text-[10px] md:text-xs ">
+        <span className="block md:hidden mt-1 text-subTitle dark:text-white text-[10px] md:text-xs ">
           {level}
         </span>
         <div

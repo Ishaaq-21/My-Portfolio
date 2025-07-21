@@ -7,7 +7,7 @@ export default function MdNav() {
           return (
             <li key={link.href}>
               <a
-                className="transition-colors duration-300 hover:text-primary font-semibold text-sm"
+                className="transition-colors duration-300 dark:text-white  hover:text-primary dark:hover:text-primary font-semibold text-sm"
                 href={link.href}
               >
                 {link.label}

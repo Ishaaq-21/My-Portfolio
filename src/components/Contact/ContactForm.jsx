@@ -42,7 +42,7 @@ export default function ContactForm() {
 
   return (
     <div className="contact flex flex-col  items-center gap-y-5">
-      <h2 className="text-subTitle font-bold text-xl md:text-2xl  mb-3 ">
+      <h2 className="text-subTitle dark:text-zinc-100/80 font-bold text-xl md:text-2xl  mb-3 ">
         Submit Your Inquiry
       </h2>
       <form
@@ -51,35 +51,50 @@ export default function ContactForm() {
         method="POST"
       >
         <div className="relative w-full sm:w-80">
-          <label htmlFor="name">Name</label>
+          <label
+            className="dark:bg-[linear-gradient(to_bottom,_rgb(2_6_23)_50%,_rgb(15_23_42)_50%)] dark:text-white/90"
+            htmlFor="name"
+          >
+            Name
+          </label>
           <input
             id="name"
             type="text"
             name="name"
             required
             placeholder="Your Name"
-            className="block  w-full  py-4 pl-5 pr-4 text-base font-semi-bold rounded-xl border-[#ccc] border-2 relative mb-8"
+            className="block  dark:bg-slate-900 w-full  py-4 pl-5 pr-4 text-base font-semi-bold rounded-xl border-[#ccc] dark:border-primary-light border-2 relative mb-8 placeholder:dark:text-white/80 placeholder:font-semibold  dark:caret-primary"
           />
         </div>
         <ValidationError prefix="Name" field="name" errors={state.errors} />
 
         <div className="relative w-full sm:w-80">
-          <label htmlFor="email">Email</label>
+          <label
+            className="dark:bg-[linear-gradient(to_bottom,_rgb(2_6_23)_50%,_rgb(15_23_42)_50%)] dark:text-white/90"
+            htmlFor="email"
+          >
+            Email
+          </label>
           <input
             id="email"
             type="email"
             name="email"
             required
             placeholder="Your Email"
-            className="block w-full  py-4 pl-5 pr-4 text-base font-semi-bold rounded-xl border-[#ccc] border-2 relative mb-8 "
+            className="block dark:bg-slate-900 w-full  py-4 pl-5 pr-4 text-base font-semi-bold rounded-xl border-[#ccc] dark:border-primary-light border-2 relative mb-8 placeholder:dark:text-white/80 placeholder:font-semibold  dark:caret-primary"
           />
         </div>
         <ValidationError prefix="Email" field="email" errors={state.errors} />
 
         <div className="relative w-full sm:w-80">
-          <label htmlFor="Inquiry">Your inquiry</label>
+          <label
+            className="dark:bg-[linear-gradient(to_bottom,_rgb(2_6_23)_50%,_rgb(15_23_42)_50%)] dark:text-white/90"
+            htmlFor="Inquiry"
+          >
+            Your inquiry
+          </label>
           <textarea
-            className="block w-full sm:w-80 py-4 pl-5 pr-4 text-base  font-semi-bold rounded-xl border-[#ccc] border-2 h-56 relative mb-16"
+            className="block resize-none dark:bg-slate-900 w-full sm:w-80 py-4 pl-5 pr-4 text-base  font-semi-bold rounded-xl border-[#ccc] dark:border-primary-light border-2 h-56 relative mb-16 placeholder:dark:text-white/80 placeholder:font-semibold dark:caret-primary"
             name="inquiry"
             required
             id="inquiry"

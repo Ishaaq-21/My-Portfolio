@@ -12,7 +12,7 @@ export default function Header() {
   }
 
   return (
-    <header className="shadow-top  md:shadow-none left-0 bottom-0 md:top-0 z-50 bg-secondary-bg fixed w-full  h-[45px] md:h-[70px]">
+    <header className="shadow-top  md:shadow-none left-0 bottom-0 md:top-0 z-50 bg-secondary-bg dark:bg-slate-900 fixed w-full  h-[45px] md:h-[70px]">
       <div className="container mx-auto px-6 md:px-8 flex justify-between items-center h-full relative">
         <p
           className={clsx(
@@ -29,14 +29,14 @@ export default function Header() {
           aria-label="Toggle mobile menu"
           aria-expanded={isOpen}
           className={clsx(
-            "md:hidden hover:text-primary-dark transition-colors duration-300 cursor-pointer ml-auto font-bold"
+            "md:hidden hover:text-primary-dark transition-colors duration-300 cursor-pointer ml-auto font-bold dark:text-white"
           )}
           onClick={handleToggleMenu}
         >
           {" "}
           <i
             className={clsx(
-              !isOpen ? "uil uil-apps text-xl" : "uil uil-times text-3xl",
+              !isOpen ? "uil uil-apps text-xl" : "uil uil-times text-3xl ",
               ""
             )}
           ></i>
