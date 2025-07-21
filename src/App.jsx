@@ -17,7 +17,7 @@ function App() {
         duration={400}
       >
         <Header></Header>
-        <main className="w-full h-full bg-primary-bg md:pt-[70px]">
+        <main className="w-full h-full bg-zinc-200 dark:bg-slate-950 md:pt-[70px]">
           {" "}
           <Home></Home>
           <About />
