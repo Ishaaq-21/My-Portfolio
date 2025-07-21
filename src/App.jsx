@@ -1,8 +1,8 @@
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import ClickSpark from "./blocks/Animations/ClickSpark/ClickSpark";
+import ClickSpark from "./blocks/Animated UI compo/ClickSpark/ClickSpark";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
