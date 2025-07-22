@@ -1,3 +1,4 @@
+import Spider from "../blocks/Animated UI compo/Spider/SpiderSkills";
 import SectionHeader from "./SharedComponents/SectionHeader";
 import SectionWrapper from "./SharedComponents/SectionWrapper";
 import { motion } from "framer-motion";
@@ -67,20 +68,12 @@ export default function Skills() {
   return (
     <SectionWrapper sectionName={"Skills"}>
       <SectionHeader title={"Skills"} subTitle={"Technical Skills"} />
-      <ul className="grid grid-cols-2 place-start-center md:grid-cols-[repeat(2,_minmax(0,_200px))] gap-y-8 gap-x-10 md:-gap-x-3 md:place-content-around bg-white dark:bg-slate-900 border-4 rounded-xl border-primary/80 p-10 mx-auto ">
-        {skills.map((skill) => {
-          return (
-            <SkillCard
-              icon={skill.icon}
-              skillName={skill.skillName}
-              level={skill.level}
-            />
-          );
-        })}
-      </ul>
+
+      <Spider />
     </SectionWrapper>
   );
 }
+// I need to animate the skills
 
 function SkillCard({ icon, skillName, level }) {
   return (
