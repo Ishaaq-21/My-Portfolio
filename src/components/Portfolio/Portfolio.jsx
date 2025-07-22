@@ -9,7 +9,10 @@ export default function Portfolio() {
   const [showMore, setShowMore] = useState(false);
   const finalProjectsArr = showMore ? projectsData : projectsData.slice(0, 6);
   return (
-    <section className="Portfolio px-7 md:px-12 py-12 lg:py-16 relative  ">
+    <section
+      id="Portfolio"
+      className="Portfolio px-7 md:px-12 py-12 lg:py-16 relative  "
+    >
       <SectionHeader title={"Portfolio"} subTitle={"My Work"} />
 
       <ul className="grid grid-cols-[repeat(1,_minmax(0,_400px))]   sm:grid-cols-2 xl:grid-cols-[repeat(3,_minmax(0,_450px))] gap-5 justify-center">
