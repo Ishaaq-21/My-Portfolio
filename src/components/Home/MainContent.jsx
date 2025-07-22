@@ -20,13 +20,14 @@ export default function MainContent() {
         I'm a creative developer passionate about building smart, responsive,
         and user-focused web experiences.
       </p>
-      <button type="button" className="main-btn text-base">
+
+      <a className="main-btn text-base" href="#Contact">
         Say Hello
         <i
           className="uil uil-message block -rotate-45 text-2xl -mt-1"
           aria-hidden="true"
         ></i>
-      </button>
+      </a>
     </div>
   );
 }
