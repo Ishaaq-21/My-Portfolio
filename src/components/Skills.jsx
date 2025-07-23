@@ -1,74 +1,11 @@
 import Spider from "../blocks/Animated UI compo/Spider/SpiderSkills";
 import SectionHeader from "./SharedComponents/SectionHeader";
 import SectionWrapper from "./SharedComponents/SectionWrapper";
-import { motion } from "framer-motion";
-const skills = [
-  {
-    icon: "/public/assets/Skills/html.svg",
-    skillName: "HTML",
-    level: "Advanced",
-  },
-  {
-    icon: "/public/assets/Skills/javascript.svg",
-    skillName: "JavaScript",
-    level: "Intermediate",
-  },
-  {
-    icon: "/public/assets/Skills/css.svg",
-    skillName: "CSS",
-    level: "Advanced",
-  },
-  {
-    icon: "/public/assets/Skills/tailwind.svg",
-    skillName: "Tailwind",
-    level: "Advanced",
-  },
-  {
-    icon: "/public/assets/Skills/react.svg",
-    skillName: "React",
-    level: "Intermediate",
-  },
-  {
-    icon: "/public/assets/Skills/nodejs.svg",
-    skillName: "Node.js",
-    level: "Basic",
-  },
-  {
-    icon: "/public/assets/Skills/C++.png",
-    skillName: "C++",
-    level: "Advanced",
-  },
-  {
-    icon: "/public/assets/Skills/git.svg",
-    skillName: "Git",
-    level: "Intermediate",
-  },
-  {
-    icon: "/public/assets/Skills/typescript.svg",
-    skillName: "TypeScript",
-    level: "Basic",
-  },
-  {
-    icon: "/public/assets/Skills/webpack.svg",
-    skillName: "WebPack",
-    level: "Basic",
-  },
-  {
-    icon: "/public/assets/Skills/Mssql.svg",
-    skillName: "Sql",
-    level: "Intermediate",
-  },
-  {
-    icon: "/public/assets/Skills/c-sharp.png",
-    skillName: "C#",
-    level: "Intermediate",
-  },
-];
+
 export default function Skills() {
   return (
     <SectionWrapper sectionName={"Skills"}>
       <SectionHeader title={"Skills"} subTitle={"Technical Skills"} />
-
       <Spider />
     </SectionWrapper>
   );
