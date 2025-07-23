@@ -12,15 +12,24 @@
   width: 100%;
   height: 100%;
 }
-html,
-body {
-}
-body {
-  font-family: "Inter", sans-serif;
-  @apply font-jetbrains;
-}
+@layer base {
+  html,
+  body {
+    @apply font-jetbrains;
+    scroll-behavior: smooth;
+    scroll-padding-top: 40px;
 
-.sub-title::before {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+/* ------------- header ---------- */
+section.home .main-content .sub-title::before {
   content: "";
   width: 70px;
   height: 1px;

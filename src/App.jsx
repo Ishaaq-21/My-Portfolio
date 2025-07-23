@@ -6,6 +6,7 @@ import ClickSpark from "./blocks/Animated UI compo/ClickSpark/ClickSpark";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
+import ScrollBar from "./components/ScrollBar";
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
           <Contact />
         </main>
         <Footer></Footer>
+        <ScrollBar />
       </ClickSpark>
     </>
   );
