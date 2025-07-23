@@ -31,3 +31,10 @@ Thumbs.db  # Windows
 .env.development
 .env.test
 .env.production
+
+
+#tasks that I need to implement
+ToDo.txt
+
+#MarsCode folder
+.marscode/
