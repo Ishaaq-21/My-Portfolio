@@ -53,8 +53,9 @@ function AboutSubContent() {
         tech. I focus on delivering real results, with attention to performance,
         UX, and client goals.
       </p>
-      <button
-        type="button"
+      <a
+        href="/public/MyCv.pdf"
+        download={"/public/MyCv.pdf"}
         className="main-btn text-xl"
         aria-label="Download CV"
       >
@@ -63,7 +64,7 @@ function AboutSubContent() {
           className="uil uil-file-download block text-3xl -mt-1"
           aria-hidden="true"
         ></i>
-      </button>
+      </a>
     </div>
   );
 }
