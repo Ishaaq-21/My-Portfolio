@@ -1,6 +1,6 @@
 import SectionHeader from "./SharedComponents/SectionHeader";
 import SectionWrapper from "./SharedComponents/SectionWrapper";
-import TiltedCard from "../blocks/Animated UI compo/TiltedCard/TiltedCard";
+import TiltedCard from "../blocks/Animated-UI-components/TiltedCard/TiltedCard";
 
 const cards = [
   {
@@ -26,13 +26,6 @@ function AboutCard({ icon, title, text }) {
   );
 }
 
-function AboutImg() {
-  return (
-    <div className="image w-56 md:w-64 lg:w-80  overflow-hidden rounded-3xl">
-      <img src="/assets/MyPic.png" alt="My Picture" loading="lazy" />
-    </div>
-  );
-}
 function AboutSubContent() {
   return (
     <div className="content text-center lg:text-left">
@@ -75,7 +68,7 @@ export default function About() {
     <SectionWrapper sectionName={"About"}>
       <SectionHeader title={"About"} subTitle={"My Introduction"} />
       <div className="main-content flex flex-col lg:flex-row md:gap-x-16 lg:gap-x-28 items-center gap-y-10">
-        <AboutImg />
+        <TiltedCard imageSrc={"/public/assets/MyPic.png"} />
         <AboutSubContent />
       </div>
     </SectionWrapper>
