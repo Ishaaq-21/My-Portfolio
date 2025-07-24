@@ -1,6 +1,6 @@
 import SectionHeader from "./SharedComponents/SectionHeader";
 import SectionWrapper from "./SharedComponents/SectionWrapper";
-import TiltedCard from "../blocks/Animated-UI-components/TiltedCard/TiltedCard";
+import TiltedCard from "../blocks/Animated UI compo/TiltedCard/TiltedCard";
 
 const cards = [
   {
