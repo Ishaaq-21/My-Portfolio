@@ -48,7 +48,7 @@ section.home .main-content .waving-hand {
   transform-origin: center bottom;
 }
 /* Profile picture */
-section.home .profile-pic {
+section#Home .profile-pic {
   animation: profile-pic-animation 8s ease-in-out 1s infinite;
 }
 
@@ -78,6 +78,11 @@ section.Portfolio .project-card:hover > .project-description {
   visibility: visible;
 }
 /* ---------------- End Portfolio ---------------  */
+
+/*
+
+
+*/
 
 /* ------------ contact section -------------- */
 section.Contact label {
