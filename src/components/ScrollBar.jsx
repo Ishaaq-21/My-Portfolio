@@ -18,7 +18,7 @@ export default function ScrollBar() {
   }, []);
   return (
     <div
-      className={`Scroll-caontainer bg-zinc-300 fixed w-2  h-44 right-3 sm:right-5 top-[calc(50%+20px)] -translate-y-1/2 rounded-2xl overflow-hidden shadow-lg`}
+      className={`Scroll-caontainer bg-zinc-300 fixed w-2  h-44 right-3 sm:right-5 top-[calc(50%+20px)] -translate-y-1/2 rounded-2xl `}
     >
       <div
         style={{ height: `${scrollProgress}%` }}
