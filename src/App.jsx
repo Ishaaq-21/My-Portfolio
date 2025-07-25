@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
 import ScrollBar from "./components/ScrollBar";
+import AnimateSectionOnScroll from "./ScrollAnimationContainer";
 function App() {
   return (
     <>
@@ -18,16 +19,7 @@ function App() {
         duration={400}
       >
         <Header></Header>
-        <main className="w-full h-full bg-zinc-100 dark:bg-slate-950 md:pt-[70px]">
-          {" "}
-          <Home></Home>
-          <About />
-          <Skills />
-          <Portfolio />
-          <Contact />
-        </main>
-        <Footer></Footer>
-        <ScrollBar />
+        <AnimateSectionOnScroll />
       </ClickSpark>
     </>
   );
