@@ -11,7 +11,7 @@ export default function Portfolio() {
   return (
     <section
       id="Portfolio"
-      className="Portfolio px-7 md:px-12 py-12 lg:py-16 relative  "
+      className="hidden-section Portfolio px-7 md:px-12 py-12 lg:py-16 relative  "
     >
       <SectionHeader title={"Portfolio"} subTitle={"My Work"} />
 

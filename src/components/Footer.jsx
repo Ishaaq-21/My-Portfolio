@@ -3,8 +3,8 @@ import socialLinks from "./Home/socialLinks";
 const sectionNames = ["About", "Skills", "Portfolio", "Contact"];
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-slate-800 pt-12 pb-20  md:!py-16">
-      <div className="container mx-auto px-6 md:px-8">
+    <footer className=" bg-white dark:bg-slate-800 pt-12 pb-20  md:!py-16">
+      <div className="hidden-section container mx-auto px-6 md:px-8">
         <h2 className="w-fit dark:text-zinc-100 mx-auto text-title text-4xl mb-10 font-bold">
           Isaaq <span className="text-primary">Hk</span>
         </h2>
