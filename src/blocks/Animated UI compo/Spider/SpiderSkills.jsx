@@ -67,7 +67,7 @@ const IconGrid = () => {
   const svgSize = 400;
   const svgCenter = svgSize / 2;
   return (
-    <div className=" icon-grid w-[400px] h-[400px] md:w-[500px] md:h-[500px] scale-75 md:scale-90 lg:scale-110 ">
+    <div className="icon-grid w-[400px] h-[400px] md:w-[500px] md:h-[500px] scale-75 md:scale-90 lg:scale-110 ">
       {}
       <svg
         width={svgSize}
@@ -204,7 +204,7 @@ const IconGrid = () => {
 };
 export default function Spider() {
   return (
-    <div className="spider relative w-full flex items-center justify-center font-sans p-4 sm:p-8 overflow-hidden -mb-12 md:-mb-16">
+    <div className="spider relative w-full flex items-center justify-center font-sans p-4 sm:p-8 overflow-hidden -my-12 md:-mb-16">
       {}
       <style>
         {`
