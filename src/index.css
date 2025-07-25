@@ -97,6 +97,41 @@ section.Contact label {
   left: 16px;
 }
 /* ------------ End contact section -------------- */
+
+/* 
+
+
+
+*/
+
+/* ----------------- On Scroll section Animation ----------------------*/
+.hidden-section {
+  opacity: 0;
+  transform: translateY(50px); /* or X for horizontal entry */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  pointer-events: none;
+}
+.show-section {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+@media (min-width: 967px) {
+  footer .hidden-section {
+    transform: translateX(-500px) !important;
+  }
+  .Portfolio.hidden-section {
+    transform: translateX(-500px) !important;
+  }
+  footer .show-section {
+    transform: translateX(0px) !important;
+  }
+  .Portfolio.show-section {
+    transform: translateX(0px) !important;
+  }
+}
+
+/* ----------------- End On Scroll section Animation ------------------*/
 @keyframes handWave {
   0%,
   100% {
