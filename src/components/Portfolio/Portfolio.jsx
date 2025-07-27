@@ -15,7 +15,7 @@ export default function Portfolio() {
     >
       <SectionHeader title={"Portfolio"} subTitle={"My Work"} />
 
-      <ul className="grid grid-cols-[repeat(1,_minmax(0,_400px))]   sm:grid-cols-2 xl:grid-cols-[repeat(3,_minmax(0,_450px))] gap-5 justify-center">
+      <ul className="grid grid-cols-[repeat(1,_minmax(0,_300px))]   sm:grid-cols-2 xl:grid-cols-[repeat(3,_minmax(0,_450px))] gap-5 justify-center">
         {finalProjectsArr.map((projectItem) => {
           return <ProjectCard project={projectItem} />;
         })}
