@@ -16,12 +16,12 @@ export default function MainContent() {
       </div>
 
       <TextType
-        text={["Fron-End Developer", "Software Engineer", "React Enthusiast"]}
+        text={["Front-End Developer", "Software Engineer", "React Enthusiast"]}
         typingSpeed={75}
         pauseDuration={1500}
         showCursor={true}
         cursorCharacter="|"
-        className="sub-title relative font-semibold text-base md:text-xl before-content-none md:before-content-[''] md:ml-[90px]"
+        className="sub-title relative font-semibold text-base md:text-xl md:before:content-[''] md:ml-[90px]"
       />
       <p className="md:max-w-[300px] lg:max-w-[400px]  mt-5 mb-8 md:mb-10 text-subTitle text-sm lg:text-lg font-semibold dark:text-white/80">
         I'm a creative developer passionate about building smart, responsive,

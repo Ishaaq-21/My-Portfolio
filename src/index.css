@@ -35,7 +35,6 @@
 }
 /* ------------- header ---------- */
 section#Home .main-content .sub-title::before {
-  content: "";
   width: 70px;
   height: 1px;
   background-color: #00000094;
