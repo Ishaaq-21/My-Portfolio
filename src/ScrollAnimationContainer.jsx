@@ -28,8 +28,8 @@ const AnimateSectionOnScroll = () => {
         });
       },
       {
-        threshold: getResponsiveThreshold(), // Wait until 50% of the element is visible
-        rootMargin: "0px 0px -50px 0px", // Optional, tweak if you want slight delay
+        threshold: getResponsiveThreshold(),
+        rootMargin: "0px 0px 0px 0px",
       }
     );
     const hiddenSections = document.querySelectorAll(".hidden-section");
@@ -40,7 +40,7 @@ const AnimateSectionOnScroll = () => {
   }, []);
   return (
     <>
-      <main className="w-full h-full bg-zinc-100 dark:bg-slate-950 md:pt-[70px]">
+      <main className="w-full h-full bg-zinc-200 dark:bg-slate-950 md:pt-[70px]">
         <Home></Home>
         <About />
         <Skills />
