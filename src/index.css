@@ -46,10 +46,10 @@ section#Home .main-content .sub-title::before {
 section#Home .main-content .sub-title::before {
   @apply dark:bg-zinc-100;
 }
-section.home .main-content .hand-container {
+section#Home .main-content .hand-container {
   animation: handWave 2s ease-in-out infinite;
 }
-section.home .main-content .waving-hand {
+section#Home .main-content .waving-hand {
   transform-origin: center bottom;
 }
 /* Profile picture */
