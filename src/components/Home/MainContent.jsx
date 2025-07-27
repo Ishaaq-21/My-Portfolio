@@ -16,7 +16,7 @@ export default function MainContent() {
       <h3 className="sub-title relative  md:before:content-['']  md:ml-[95px] text-base md:text-lg lg:text-xl text-title font-semibold dark:text-white/90 ">
         Front-End Developer
       </h3>
-      <p className="md:max-w-[300px] lg:max-w-[400px]  mt-5 mb-8 md:mb-10 text-subTitle text-sm lg:text-lg font-semibold dark:text-white/70">
+      <p className="md:max-w-[300px] lg:max-w-[400px]  mt-5 mb-8 md:mb-10 text-subTitle text-sm lg:text-lg font-semibold dark:text-white">
         I'm a creative developer passionate about building smart, responsive,
         and user-focused web experiences.
       </p>
