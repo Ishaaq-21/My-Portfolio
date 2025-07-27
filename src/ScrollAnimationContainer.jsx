@@ -29,7 +29,7 @@ const AnimateSectionOnScroll = () => {
       },
       {
         threshold: getResponsiveThreshold(),
-        rootMargin: "0px 0px 0px 0px",
+        rootMargin: "200px 0px 0px 0px",
       }
     );
     const hiddenSections = document.querySelectorAll(".hidden-section");
