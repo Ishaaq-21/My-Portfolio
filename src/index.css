@@ -34,7 +34,7 @@
   }
 }
 /* ------------- header ---------- */
-section.home .main-content .sub-title::before {
+section#Home .main-content .sub-title::before {
   content: "";
   width: 70px;
   height: 1px;
@@ -43,7 +43,7 @@ section.home .main-content .sub-title::before {
   top: 50%;
   transform: translate(-90px, -50%);
 }
-section.home .main-content .sub-title::before {
+section#Home .main-content .sub-title::before {
   @apply dark:bg-zinc-100;
 }
 section.home .main-content .hand-container {
