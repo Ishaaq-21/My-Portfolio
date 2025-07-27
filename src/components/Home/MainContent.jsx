@@ -24,7 +24,7 @@ export default function MainContent() {
       <a className="main-btn text-base" href="#Contact">
         Say Hello
         <i
-          className="uil uil-message block -rotate-45 text-2xl -mt-1"
+          className="uil uil-message block -rotate-45 text-xl md:text-2xl -mt-1"
           aria-hidden="true"
         ></i>
       </a>

@@ -54,7 +54,7 @@ function AboutSubContent() {
       >
         Download CV
         <i
-          className="uil uil-file-download block text-3xl -mt-1"
+          className="uil uil-file-download block text-xl md:text-3xl -mt-1"
           aria-hidden="true"
         ></i>
       </a>
