@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
 .main-btn {
-  @apply relative inline-flex h-12 md:h-14 text-sm md:text-lg items-center justify-between gap-x-3 overflow-hidden rounded-md   bg-gradient-to-r dark:from-[#070e41] dark:to-[#263381] from-[#f6f7ff] to-[#f5f6ff] dark:border-[rgb(76_100_255)] border-2 border-[#f59e0b] bg-transparent px-4 md:px-6 font-medium dark:text-white text-black transition-all duration-100 dark:[box-shadow:5px_5px_#f59e0b] [box-shadow:5px_5px_#f59e0b] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(38_51_129)] dark:active:[box-shadow:0px_0px_#f59e0b];
+  @apply relative inline-flex h-12 md:h-14 text-sm md:text-lg items-center justify-between gap-x-3 overflow-hidden rounded-md   bg-gradient-to-r dark:from-[#070e41] dark:to-[#263381] from-[#f6f7ff] to-[#f5f6ff] dark:border-[rgb(76_100_255)] border-2 border-[#f59e0b] bg-transparent px-4 md:px-6 font-medium dark:text-white text-black transition-all duration-100 dark:[box-shadow:5px_5px_#f59e0b] [box-shadow:5px_5px_#f59e0b] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(38_51_129)] dark:active:[box-shadow:0px_0px_#f59e0b] cursor-none;
 }
 #root {
   width: 100%;
@@ -21,12 +21,16 @@
 
     scrollbar-width: none;
     -ms-overflow-style: none;
-    cursor: url("../public/assets/cursor-24.png"), auto;
   }
 
   html::-webkit-scrollbar,
   body::-webkit-scrollbar {
     display: none;
+  }
+
+  a,
+  button {
+    cursor: none;
   }
 }
 /* ------------- header ---------- */

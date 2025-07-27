@@ -13,7 +13,7 @@ export default function Contact() {
             Reach Out
           </h2>
           {socialAccounts.map((socialItem) => {
-            return <ContactCard socialObj={socialItem} />;
+            return <ContactCard key={socialItem.icon} socialObj={socialItem} />;
           })}
         </div>
         <ContactForm />

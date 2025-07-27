@@ -17,7 +17,7 @@ export default function Home() {
           particleColors={["#6c6c6c", "#6c6c6c"]}
           particleCount={300}
           particleSpread={20}
-          speed={0.1}
+          speed={0.12}
           particleBaseSize={200}
           moveParticlesOnHover={true}
           alphaParticles={true}

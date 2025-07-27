@@ -23,7 +23,7 @@ const IconWrapper = ({
   animationDelay = 0,
 }) => (
   <div
-    className={` icon-wrapper
+    className={`icon-wrapper cursor-target
         backdrop-blur-xl rounded-2xl flex items-center justify-center transition duration-300 border
         ${
           isHighlighted

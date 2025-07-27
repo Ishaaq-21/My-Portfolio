@@ -19,7 +19,7 @@ export default function ProjectCard({ project }) {
             rel="noopener noreferrer"
             href={project.github}
             target="_blank"
-            className="hover:scale-125 transition duration-300"
+            className="hover:scale-125 transition duration-300 cursor-target p-1"
           >
             <i className="uil uil-github text-primary text-4xl"></i>
           </a>
@@ -28,7 +28,7 @@ export default function ProjectCard({ project }) {
               rel="noopener noreferrer"
               href={project.demo}
               target="_blank"
-              className="hover:scale-125 transition duration-300"
+              className="hover:scale-125 transition duration-300 cursor-target p-1"
             >
               <i className="uil uil-eye text-primary text-4xl"></i>
             </a>

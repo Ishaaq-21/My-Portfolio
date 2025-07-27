@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import navItems from "./NavLinks";
 export default function MdNav() {
   return (
@@ -7,8 +8,9 @@ export default function MdNav() {
           return (
             <li key={link.href}>
               <a
-                className="transition-colors duration-300 dark:text-white  hover:text-primary dark:hover:text-primary font-semibold text-sm"
+                className="transition-colors duration-300 dark:text-white  hover:text-primary dark:hover:text-primary font-semibold text-sm cursor-target p-2"
                 href={link.href}
+                data-target={link.label}
               >
                 {link.label}
               </a>

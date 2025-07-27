@@ -49,7 +49,7 @@ function AboutSubContent() {
       <a
         href="/public/MyCv.pdf"
         download={"/public/MyCv.pdf"}
-        className="main-btn text-xl"
+        className="main-btn text-xl cursor-target"
         aria-label="Download CV"
       >
         Download CV

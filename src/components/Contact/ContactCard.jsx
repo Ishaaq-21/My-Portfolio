@@ -9,7 +9,7 @@ export default function ContactCard({ socialObj }) {
         {socialObj.data}
       </p>
       <a
-        className="text-base text-subTitle dark:text-zinc-100/80 group hover:text-primary transition duration-300"
+        className="text-base text-subTitle dark:text-zinc-100/80 group hover:text-primary transition duration-300 cursor-target"
         href={
           socialObj.name === "Email"
             ? `mailto:${socialObj.data}`

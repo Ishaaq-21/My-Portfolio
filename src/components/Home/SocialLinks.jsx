@@ -10,7 +10,7 @@ export default function SocialLinks() {
               rel="noopener noreferrer"
               href={link.href}
               aria-label={`Visit my ${link.name} profile`}
-              className={`${link.hoverColor} transition duration-300 text-3xl dark:text-zinc-100 dark:${link.hoverColor} ${link.darkHoverColor}`}
+              className={`${link.hoverColor} transition duration-300 text-3xl dark:text-zinc-100 dark:${link.hoverColor} ${link.darkHoverColor} cursor-target p-2 `}
             >
               <i className={link.icon}></i>
             </a>

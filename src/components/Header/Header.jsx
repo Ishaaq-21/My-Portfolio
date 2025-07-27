@@ -2,7 +2,6 @@ import clsx from "clsx";
 import { useState } from "react";
 import DarkModeToggle from "../../blocks/Animated UI compo/DarkModeButton/DarkModeButton";
 import MobileNav from "./MobileNav";
-import navItems from "./NavLinks";
 import MdNav from "./MdNav";
 
 export default function Header() {
@@ -16,7 +15,7 @@ export default function Header() {
       <div className="container mx-auto px-6 md:px-8 flex justify-between items-center h-full relative">
         <p
           className={clsx(
-            "font-semibold  text-lg md:text-2xl text-primary hover:text-primary-dark transition-colors duration-300",
+            "font-semibold  text-lg md:text-2xl text-primary hover:text-primary-dark transition-colors duration-300 cursor-target cursor-none p-2",
             isOpen && "hidden"
           )}
         >
@@ -29,7 +28,7 @@ export default function Header() {
           aria-label="Toggle mobile menu"
           aria-expanded={isOpen}
           className={clsx(
-            "md:hidden hover:text-primary-dark transition-colors duration-300 cursor-pointer ml-auto font-bold dark:text-white"
+            "md:hidden hover:text-primary-dark transition-colors duration-300  ml-auto font-bold dark:text-white cursor-target "
           )}
           onClick={handleToggleMenu}
         >

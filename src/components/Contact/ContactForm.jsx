@@ -11,11 +11,6 @@ function CustomSnackBar({ opening }) {
     setOpen(false);
   };
 
-  // ✅ This function can open the snackbar (you can call it after form submit, for example)
-  const showSnackbar = () => {
-    setOpen(opening);
-  };
-
   return (
     <>
       <Snackbar
@@ -63,7 +58,7 @@ export default function ContactForm() {
             name="name"
             required
             placeholder="Your Name"
-            className="block  dark:bg-slate-900 w-full  py-4 pl-5 pr-4 text-base font-semi-bold rounded-xl border-[#ccc] dark:border-primary-light border-2 relative mb-8 placeholder:dark:text-white/80 placeholder:font-semibold  dark:caret-primary"
+            className="block  dark:bg-slate-900 w-full  py-4 pl-5 pr-4 text-base font-semi-bold rounded-xl border-[#ccc] dark:border-primary-light border-2 relative mb-8 placeholder:dark:text-white/80 placeholder:font-semibold  dark:caret-primary cursor-target"
           />
         </div>
         <ValidationError prefix="Name" field="name" errors={state.errors} />
@@ -81,7 +76,7 @@ export default function ContactForm() {
             name="email"
             required
             placeholder="Your Email"
-            className="block dark:bg-slate-900 w-full  py-4 pl-5 pr-4 text-base font-semi-bold rounded-xl border-[#ccc] dark:border-primary-light border-2 relative mb-8 placeholder:dark:text-white/80 placeholder:font-semibold  dark:caret-primary"
+            className="block dark:bg-slate-900 w-full  py-4 pl-5 pr-4 text-base font-semi-bold rounded-xl border-[#ccc] dark:border-primary-light border-2 relative mb-8 placeholder:dark:text-white/80 placeholder:font-semibold  dark:caret-primary cursor-target"
           />
         </div>
         <ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -94,7 +89,7 @@ export default function ContactForm() {
             Your inquiry
           </label>
           <textarea
-            className="block resize-none dark:bg-slate-900 w-full sm:w-80 py-4 pl-5 pr-4 text-base  font-semi-bold rounded-xl border-[#ccc] dark:border-primary-light border-2 h-56 relative mb-16 placeholder:dark:text-white/80 placeholder:font-semibold dark:caret-primary"
+            className="block resize-none dark:bg-slate-900 w-full sm:w-80 py-4 pl-5 pr-4 text-base  font-semi-bold rounded-xl border-[#ccc] dark:border-primary-light border-2 h-56 relative mb-16 placeholder:dark:text-white/80 placeholder:font-semibold dark:caret-primary cursor-target"
             name="inquiry"
             required
             id="inquiry"
@@ -110,7 +105,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={state.submitting}
-            className={`main-btn`}
+            className="main-btn cursor-target"
           >
             Send Message{" "}
             <i className="uil uil-message block -rotate-45 text-2xl -mt-1"></i>

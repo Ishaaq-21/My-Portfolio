@@ -21,7 +21,7 @@ export default function MainContent() {
         and user-focused web experiences.
       </p>
 
-      <a className="main-btn text-base" href="#Contact">
+      <a className="main-btn text-base cursor-target" href="#Contact">
         Say Hello
         <i
           className="uil uil-message block -rotate-45 text-xl md:text-2xl -mt-1"
