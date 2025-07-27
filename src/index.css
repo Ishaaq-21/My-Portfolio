@@ -17,10 +17,11 @@
   body {
     @apply font-jetbrains;
     scroll-behavior: smooth;
-    scroll-padding-top: 40px;
+    scroll-padding-top: 50px;
 
     scrollbar-width: none;
     -ms-overflow-style: none;
+    cursor: url("../public/assets/cursor-24.png"), auto;
   }
 
   html::-webkit-scrollbar,
@@ -91,7 +92,7 @@ section.Contact label {
   font-size: 13px;
   font-weight: 600;
   padding: 5px;
-  background: linear-gradient(to bottom, #f4f4f5 50%, #ffffff 50%);
+  background: linear-gradient(to bottom, #e4e4e7 50%, #ffffff 50%);
   color: #777;
   top: -13px;
   left: 16px;
