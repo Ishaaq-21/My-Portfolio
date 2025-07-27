@@ -1,3 +1,4 @@
+import TextType from "../../blocks/Animated UI compo/TextType/TextType";
 export default function MainContent() {
   return (
     <div className="main-content order-2 md:order-1 lg:grow-[1] self-start md:self-auto ">
@@ -13,10 +14,16 @@ export default function MainContent() {
           />
         </div>
       </div>
-      <h3 className="sub-title relative  md:before:content-['']  md:ml-[95px] text-base md:text-lg lg:text-xl text-title font-semibold dark:text-white/90 ">
-        Front-End Developer
-      </h3>
-      <p className="md:max-w-[300px] lg:max-w-[400px]  mt-5 mb-8 md:mb-10 text-subTitle text-sm lg:text-lg font-semibold dark:text-white">
+
+      <TextType
+        text={["Fron-End Developer", "Software Engineer", "React Enthusiast"]}
+        typingSpeed={75}
+        pauseDuration={1500}
+        showCursor={true}
+        cursorCharacter="|"
+        className="sub-title relative font-semibold text-base md:text-xl before-content-none md:before-content-[''] md:ml-[90px]"
+      />
+      <p className="md:max-w-[300px] lg:max-w-[400px]  mt-5 mb-8 md:mb-10 text-subTitle text-sm lg:text-lg font-semibold dark:text-white/80">
         I'm a creative developer passionate about building smart, responsive,
         and user-focused web experiences.
       </p>
