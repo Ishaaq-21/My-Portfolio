@@ -3,7 +3,6 @@ import { useForm, ValidationError } from "@formspree/react";
 import { useState } from "react";
 
 import PopupCard from "./SuccessfullMessagePopUp/SuccessPopUp";
-import { form } from "framer-motion/client";
 
 let formInputs = {
   name: "",
