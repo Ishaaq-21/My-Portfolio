@@ -1,5 +1,7 @@
+import { createPortal } from "react-dom";
+
 const PopupCard = ({ isOpen, onClose, name }) => {
-  return (
+  return createPortal(
     // Popup Overlay
     <div
       onClick={onClose}
@@ -53,7 +55,8 @@ const PopupCard = ({ isOpen, onClose, name }) => {
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 export default PopupCard;
