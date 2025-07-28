@@ -4,6 +4,7 @@ import TargetCursor from "./blocks/Animated UI compo/TargetCursor/TargetCursor";
 
 import AnimateSectionOnScroll from "./ScrollAnimationContainer";
 import { useEffect, useState } from "react";
+import { MobileScreenContext } from "./components/SharedComponents/Context/MobileScreensContext";
 function App() {
   const [mobileScreen, setMobileScreen] = useState(true);
   useEffect(() => {
@@ -12,14 +13,14 @@ function App() {
   }, []);
 
   return (
-    <>
+    <MobileScreenContext value={mobileScreen}>
       {/* the target cursor has no effect in mobile screens since they work with touch, so I render the component only in pc's and large screens */}
       {!mobileScreen && (
         <TargetCursor spinDuration={3} hideDefaultCursor={true} />
       )}
       <Header></Header>
       <AnimateSectionOnScroll />
-    </>
+    </MobileScreenContext>
   );
 }
 
