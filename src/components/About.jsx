@@ -27,7 +27,13 @@ function AboutCard({ icon, title, text }) {
     </li>
   );
 }
-
+const MobileImg = () => {
+  return (
+    <div className="image w-56 md:w-64 lg:w-80 shadow-[0_0_10px_1px_#f59e0b]  overflow-hidden rounded-3xl">
+      <img src="/assets/MyPic.png" alt="My Picture" loading="lazy" />
+    </div>
+  );
+};
 function AboutSubContent() {
   return (
     <div className="content text-center lg:text-left">
@@ -67,12 +73,15 @@ function AboutSubContent() {
 //The main Compo
 export default function About() {
   const { mobileScreen } = useContext(MobileScreenContext);
-
   return (
     <SectionWrapper sectionName={"About"}>
       <SectionHeader title={"About"} subTitle={"My Introduction"} />
       <div className="main-content flex flex-col lg:flex-row md:gap-x-16 lg:gap-x-28 items-center gap-y-10">
-        <TiltedCard imageSrc={"/public/assets/MyPic.png"} />
+        {mobileScreen ? (
+          <MobileImg />
+        ) : (
+          <TiltedCard imageSrc={"/public/assets/MyPic.png"} />
+        )}
         <AboutSubContent />
       </div>
     </SectionWrapper>
