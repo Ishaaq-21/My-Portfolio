@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className=" bg-white dark:bg-slate-800 pt-12 pb-20  md:!py-16">
       <div className="hidden-section container mx-auto px-6 md:px-8">
-        <h2 className="w-fit dark:text-zinc-100 mx-auto text-title text-4xl mb-10 font-bold">
+        <h2 className="w-fit dark:text-zinc-100 mx-auto text-title text-2xl md:text-4xl mb-10 font-bold">
           Isaaq <span className="text-primary">Hk</span>
         </h2>
         <ul className="section flex justify-center md:justify-around md:w-3/4 mb-8 mx-auto place-items-center gap-5">
@@ -27,7 +27,7 @@ export default function Footer() {
               <li key={socialAcc.icon}>
                 <a
                   href={socialAcc.href}
-                  className={`text-4xl text-subTitle dark:text-zinc-100/80 transition duration-300 cursor-target p-2 ${socialAcc.hoverColor} ${socialAcc.darkHoverColor}`}
+                  className={`text-2xl md:text-4xl text-subTitle dark:text-zinc-100/80 transition duration-300 cursor-target p-2 ${socialAcc.hoverColor} ${socialAcc.darkHoverColor}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
