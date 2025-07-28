@@ -94,17 +94,19 @@ section.Contact label {
 */
 
 /* ----------------- On Scroll section Animation ----------------------*/
-.hidden-section {
+
+.hidden-section:not(section#Home) {
   opacity: 0;
-  transform: translateY(50px); /* or X for horizontal entry */
+  transform: translateY(50px); /*or X for horizontal entry*/
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   pointer-events: none;
 }
-.show-section {
+.show-section:not(section#Home) {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
+
 @media (min-width: 967px) {
   footer .hidden-section {
     transform: translateX(-500px) !important;
