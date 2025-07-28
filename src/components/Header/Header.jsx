@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { useState } from "react";
-import DarkModeToggle from "../../blocks/Animated UI compo/DarkModeButton/DarkModeButton";
+import DarkModeToggle from "../DarkModeButton/DarkModeButton";
 import MobileNav from "./MobileNav";
 import MdNav from "./MdNav";
 
