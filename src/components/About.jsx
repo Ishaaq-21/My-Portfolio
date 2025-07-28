@@ -1,6 +1,8 @@
 import SectionHeader from "./SharedComponents/SectionHeader";
 import SectionWrapper from "./SharedComponents/SectionWrapper";
 import TiltedCard from "../blocks/Animated UI compo/TiltedCard/TiltedCard";
+import { useContext } from "react";
+import { MobileScreenContext } from "./SharedComponents/Context/MobileScreensContext";
 
 const cards = [
   {
@@ -64,6 +66,8 @@ function AboutSubContent() {
 
 //The main Compo
 export default function About() {
+  const { mobileScreen } = useContext(MobileScreenContext);
+
   return (
     <SectionWrapper sectionName={"About"}>
       <SectionHeader title={"About"} subTitle={"My Introduction"} />
