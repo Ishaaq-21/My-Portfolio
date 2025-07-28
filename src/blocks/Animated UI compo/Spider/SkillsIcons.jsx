@@ -169,28 +169,28 @@ const HashIcon = () => (
   >
     <path
       d="M10 3L6 21"
-      stroke="#3B82F6"
+      stroke="#f59e0b"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <path
       d="M18 3L14 21"
-      stroke="#3B82F6"
+      stroke="#f59e0b"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <path
       d="M4 9H20"
-      stroke="#3B82F6"
+      stroke="#f59e0b"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <path
       d="M2 15H18"
-      stroke="#3B82F6"
+      stroke="#f59e0b"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
