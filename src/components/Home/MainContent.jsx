@@ -6,7 +6,7 @@ export default function MainContent() {
         <h1 className="font-bold  text-3xl lg:text-5xl text-title font-poppins dark:text-zinc-100">
           Isaaq Hk
         </h1>
-        <div className="hand-container origin-center inline-block">
+        <div className="hand-container  inline-block">
           <img
             src="/public/assets/hand.svg"
             className="waving-hand w-8 md:w-10 lg:w-12"
