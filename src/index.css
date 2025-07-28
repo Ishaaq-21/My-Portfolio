@@ -45,15 +45,10 @@ section#Home .main-content .sub-title::before {
 section#Home .main-content .sub-title::before {
   @apply dark:bg-zinc-100;
 }
-section#Home .main-content .hand-container {
-  animation: handWave 2s ease-in-out infinite;
-}
-section#Home .main-content .waving-hand {
-  transform-origin: center bottom;
-}
+
 /* Profile picture */
 section#Home .profile-pic {
-  animation: profile-pic-animation 8s ease-in-out 1s infinite;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 }
 
 /* --------- End header ----------- */
@@ -62,17 +57,7 @@ section#Home .profile-pic {
 section.Skills .skill-card {
   @apply relative flex flex-col md:flex-row items-center text-center md:text-left gap-3 md:gap-5 items-center;
 }
-@keyframes profile-pic-animation {
-  0% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-  }
-  100% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-}
+
 /*--------------------portfolio -----------*/
 section.Portfolio .project-card:hover > img {
   transform: scale(1.3);
@@ -136,15 +121,3 @@ section.Contact label {
 }
 
 /* ----------------- End On Scroll section Animation ------------------*/
-@keyframes handWave {
-  0%,
-  100% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(15deg);
-  }
-  75% {
-    transform: rotate(-15deg);
-  }
-}
