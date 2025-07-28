@@ -1,6 +1,6 @@
 export default function ProjectCard({ project }) {
   return (
-    <li className="project-card border-4 border-primary dark:border-primary place-content-center h-[200px] md:h-[240px] max rounded-3xl  overflow-hidden relative">
+    <li className="project-card border-4 border-primary dark:border-primary place-content-center h-[200px] md:h-[240px] max rounded-3xl  overflow-hidden relative cursor-target">
       <img
         className="w-full h-full transition duration-500"
         src={project.icon}
