@@ -32,17 +32,17 @@ const DarkModeToggle = () => {
     <button
       onClick={toggleTheme}
       aria-label="Toggle dark mode"
-      className=" absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 right-0 md:right-4 lg:right-8 md:left-auto flex items-center justify-center w-fit bg-white dark:bg-slate-800 rounded-full  transition-all duration-300 ease-in-out  hover:scale-110  "
+      className=" absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 right-0 md:-right-[10px] lg:right-0 md:left-auto flex items-center justify-center 0 rounded-full  transition-all duration-300 ease-in-out  hover:scale-110 w-6 h-6 md:w-8 md:h-8 cursor-target"
     >
       <SunIcon
-        className={`absolute transition-all duration-500 ease-in-out text-yellow-500 w-6 md:w-8 cursor-target ${
+        className={`absolute transition-all duration-500 ease-in-out text-yellow-500 w-full  ${
           isDarkMode
             ? "opacity-100 scale-100 rotate-0"
             : "opacity-0 scale-50 -rotate-90"
         }`}
       />
       <MoonIcon
-        className={`absolute transition-all duration-500 ease-in-out text-yellow-500 w-6 md:w-8 cursor-target ${
+        className={`absolute transition-all duration-500 ease-in-out text-yellow-500 w-full ${
           isDarkMode
             ? "opacity-0 scale-50 rotate-90"
             : "opacity-100 scale-100 rotate-0"
