@@ -21,7 +21,7 @@ export default function MainContent() {
         pauseDuration={1500}
         showCursor={true}
         cursorCharacter="|"
-        className="sub-title relative font-semibold text-base md:text-xl md:before:content-[''] md:ml-[90px]"
+        className="sub-title relative font-semibold text-base md:text-xl lg:before:content-[''] lg:ml-[90px]"
       />
       <p className="md:max-w-[300px] lg:max-w-[400px]  mt-5 mb-8 md:mb-10 text-subTitle text-sm lg:text-lg font-semibold dark:text-white/80">
         I'm a creative developer passionate about building smart, responsive,
