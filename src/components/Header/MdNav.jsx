@@ -1,4 +1,5 @@
 import navItems from "./NavLinks";
+import { handleNavClick } from "./NavLinks";
 export default function MdNav() {
   return (
     <nav className="hidden md:block md:mr-8 lg:mr-12">
@@ -7,6 +8,7 @@ export default function MdNav() {
           return (
             <li key={link.href}>
               <a
+                onClick={handleNavClick}
                 className="transition-colors duration-300 dark:text-white  hover:text-primary dark:hover:text-primary font-semibold md:text-sm lg:text-base cursor-target p-2"
                 href={link.href}
                 data-target={link.label}

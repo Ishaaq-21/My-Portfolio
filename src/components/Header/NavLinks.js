@@ -5,5 +5,12 @@ const navItems = [
   { label: "Portfolio", icon: "uil-image", href: "#Portfolio" },
   { label: "Contact", icon: "uil-message", href: "#Contact" },
 ];
-
+export function handleNavClick(e) {
+  e.preventDefault();
+  const targetId = e.currentTarget.getAttribute("href");
+  const targetElement = document.querySelector(targetId);
+  if (targetElement) {
+    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
 export default navItems;

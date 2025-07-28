@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import navItems from "./NavLinks";
+import navItems, { handleNavClick } from "./NavLinks";
 export default function MobileNav({ isOpen }) {
   return (
     <nav
@@ -14,6 +14,7 @@ export default function MobileNav({ isOpen }) {
           return (
             <li key={link.href}>
               <a
+                onClick={handleNavClick}
                 key={link.href}
                 href={link.href}
                 data-target={link.label}
