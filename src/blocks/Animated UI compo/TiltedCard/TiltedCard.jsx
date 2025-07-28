@@ -14,7 +14,7 @@ const springValues = {
 export default function TiltedCard({
   imageSrc,
   altText = "Tilted card image",
-  captionText = "Ishaq Hk",
+  captionText = "Isaaq Hk",
 
   scaleOnHover = 1.1,
   rotateAmplitude = 14,
@@ -87,7 +87,7 @@ export default function TiltedCard({
       )}
 
       <motion.div
-        className="relative w-11/12 h-full [transform-style:preserve-3d]"
+        className="relative w-11/12 h-full [transform-style:preserve-3d] cursor-target"
         style={{
           rotateX,
           rotateY,
