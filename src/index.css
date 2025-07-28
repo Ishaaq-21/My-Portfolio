@@ -18,7 +18,7 @@
     @apply font-jetbrains;
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
-
+    position: relative;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
@@ -74,6 +74,10 @@ section.Portfolio .project-card:hover > .project-description {
 */
 
 /* ------------ contact section -------------- */
+section.Contact input,
+section.Contact textarea {
+  @apply mb-8 block dark:bg-slate-900 w-full py-4 pl-5 pr-4 text-base  font-semibold rounded-xl border-[#ccc] text-title dark:text-white/90 dark:border-primary-light border-2  relative  focus:outline-black placeholder:dark:text-white/80 placeholder:font-semibold dark:caret-primary  outline-black;
+}
 section.Contact label {
   position: absolute;
   z-index: 1;
