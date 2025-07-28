@@ -13,14 +13,14 @@ function App() {
   }, []);
 
   return (
-    <MobileScreenContext value={mobileScreen}>
+    <MobileScreenContext.Provider value={{ mobileScreen }}>
       {/* the target cursor has no effect in mobile screens since they work with touch, so I render the component only in pc's and large screens */}
       {!mobileScreen && (
         <TargetCursor spinDuration={3} hideDefaultCursor={true} />
       )}
       <Header></Header>
       <AnimateSectionOnScroll />
-    </MobileScreenContext>
+    </MobileScreenContext.Provider>
   );
 }
 
