@@ -46,6 +46,28 @@ section#Home .main-content .sub-title::before {
   @apply dark:bg-zinc-100;
 }
 
+/*       ------------------ header nav links animation -------------------- */
+.draw-me {
+  stroke-dasharray: 200; /* A large value to cover most paths */
+  stroke-dashoffset: 200;
+  transition: stroke-dashoffset 0.8s ease-in-out;
+}
+.group:hover .draw-me {
+  stroke-dashoffset: 0;
+}
+
+/* --- Contact Icon: Flap Animation --- */
+.envelope-flap {
+  transform-origin: top center;
+  transition: transform 0.5s ease-in-out 0.4s; /* Delayed start */
+  transform: scaleY(0);
+}
+.group:hover .envelope-flap {
+  transform: scaleY(1);
+}
+/*            ---------------------- End nav links animation ------------------*/
+
+/* ------------------------ Home -----------------*/
 /* Profile picture */
 section#Home .profile-pic {
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
