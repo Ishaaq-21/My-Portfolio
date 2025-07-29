@@ -18,7 +18,7 @@ export default function MobileNav({ isOpen }) {
                 key={link.href}
                 href={link.href}
                 data-target={link.label}
-                className="w-full transition-colors duration-300  dark:text-white  hover:text-primary dark:hover:text-primary hover:text-primary text-center font-medium text-sm sm:text-lg cursor-target"
+                className="w-full transition-colors duration-100  dark:text-white  hover:text-primary dark:hover:text-primary hover:text-primary text-center font-medium text-sm sm:text-lg cursor-target"
               >
                 <i
                   className={`uis ${link.mobIcon} block text-lg sm:text-2xl mr-1 mb-1`}
