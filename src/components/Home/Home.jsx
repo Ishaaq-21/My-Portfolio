@@ -7,14 +7,14 @@ export default function Home() {
   return (
     <section
       id="Home"
-      className="hidden-section relative w-full  h-[calc(100%-45px)] md:h-[calc(100%-70px)] py-10 lg:py-0"
+      className="hidden-section relative w-full  h-[calc(100vh-45px)] md:h-[calc(100vh-70px)] py-10 md:py-0"
     >
-      <div style={{ width: "100%", height: "600px", position: "relative" }}>
+      <div style={{ width: "100%", height: "100%", position: "relative" }}>
         <Particles
           particleColors={["#6c6c6c", "#6c6c6c"]}
           particleCount={300}
           particleSpread={20}
-          speed={0.01}
+          speed={0.03}
           particleBaseSize={200}
           moveParticlesOnHover={false}
           alphaParticles={true}
