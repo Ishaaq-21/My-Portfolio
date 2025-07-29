@@ -1,10 +1,11 @@
-const navItems = [
-  { label: "Home", icon: "uil-estate", href: "#Home" },
-  { label: "About", icon: "uil-user", href: "#About" },
-  { label: "Skills", icon: "uil-list-ul", href: "#Skills" },
-  { label: "Portfolio", icon: "uil-image", href: "#Portfolio" },
-  { label: "Contact", icon: "uil-message", href: "#Contact" },
-];
+import {
+  AboutIcon,
+  ContactIcon,
+  HomeIcon,
+  PortfolioIcon,
+  SkillsIcon,
+} from "./LgNavIcons";
+
 export function handleNavClick(e) {
   e.preventDefault();
   const targetId = e.currentTarget.getAttribute("href");
@@ -13,4 +14,38 @@ export function handleNavClick(e) {
     targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
+
+const navItems = [
+  {
+    label: "Home",
+    mobIcon: "uil-estate",
+    lgScreenIcon: HomeIcon,
+    href: "#Home",
+  },
+  {
+    label: "About",
+    mobIcon: "uil-user",
+    lgScreenIcon: AboutIcon,
+    href: "#About",
+  },
+  {
+    label: "Skills",
+    mobIcon: "uil-list-ul",
+    lgScreenIcon: SkillsIcon,
+    href: "#Skills",
+  },
+  {
+    label: "Portfolio",
+    mobIcon: "uil-image",
+    lgScreenIcon: PortfolioIcon,
+    href: "#Portfolio",
+  },
+  {
+    label: "Contact",
+    mobIcon: "uil-message",
+    lgScreenIcon: ContactIcon,
+    href: "#Contact",
+  },
+];
+
 export default navItems;
