@@ -10,7 +10,9 @@ const DarkModeToggle = () => {
     if (savedTheme) {
       return savedTheme === "dark";
     }
-    return false;
+    //this to make the dark theme as the default one, so if no theme was saved in the local storage
+    //(means this is the first visit) the default theme will be set to dark
+    return true;
   });
 
   // Effect to apply the theme class to the <html> element and save to localStorage
