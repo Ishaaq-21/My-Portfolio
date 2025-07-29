@@ -21,7 +21,7 @@ export default function MobileNav({ isOpen }) {
                 className="w-full transition-colors duration-300  dark:text-white  hover:text-primary dark:hover:text-primary hover:text-primary text-center font-medium text-sm sm:text-lg cursor-target"
               >
                 <i
-                  className={`uis ${link.icon} block text-lg sm:text-2xl mr-1 mb-1`}
+                  className={`uis ${link.mobIcon} block text-lg sm:text-2xl mr-1 mb-1`}
                 ></i>
                 {link.label}
               </a>
