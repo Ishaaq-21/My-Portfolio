@@ -10,7 +10,7 @@ export default function MainContent() {
           <img
             src="/public/assets/hand.svg"
             className="waving-hand w-8 md:w-10 lg:w-12"
-            alt=""
+            alt="hand image"
           />
         </div>
       </div>

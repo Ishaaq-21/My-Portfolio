@@ -6,8 +6,8 @@ export default function MainImg() {
       mx-auto -translate-x-5 my-5 md:my-5 mx-auto lg:mx-0 lg:grow-[1]"
     >
       <picture>
-        <source srcset="public/assets/MyPic.avif" type="image/avif" />
-        <source srcset="/assets/MyPic.png" type="image/png" />
+        <source srcSet="public/assets/MyPic.avif" type="image/avif" />
+        <source srcSet="/assets/MyPic.png" type="image/png" />
         <img
           src="/assets/MyPic.png"
           alt="Isaac's Picture"

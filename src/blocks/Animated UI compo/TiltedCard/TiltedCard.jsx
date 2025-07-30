@@ -3,7 +3,7 @@
 */
 
 import { useRef, useState } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { useMotionValue, useSpring } from "framer-motion";
 
 const springValues = {
   damping: 30,
@@ -13,7 +13,7 @@ const springValues = {
 
 export default function TiltedCard({
   imageSrc,
-  altText = "Tilted card image",
+  altText = "Isaac Image",
   captionText = "Isaaq Hk",
 
   scaleOnHover = 1.1,

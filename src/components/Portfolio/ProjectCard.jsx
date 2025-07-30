@@ -8,7 +8,7 @@ export default function ProjectCard({ project }) {
           className="w-full h-full transition duration-500"
           loading="lazy"
           src={project.iconPdf}
-          alt="Isaac's Picture"
+          alt="Portfolio project"
         />
       </picture>
 
