@@ -1,6 +1,7 @@
 const projectsData = [
   {
-    icon: "/public/assets/Projects/DVLD.png",
+    iconPng: "/public/assets/Projects/DVLD.png",
+    iconAvif: "/public/assets/Projects/DVLD.avif",
     type: "desktop",
     name: "Driving License Management System (DVLD)",
     description:
@@ -9,7 +10,8 @@ const projectsData = [
     github: "https://github.com/Ishaaq-21/Driving-Management-System-",
   },
   {
-    icon: "/public/assets/Projects/PrayerTimes.png",
+    iconPng: "/public/assets/Projects/PrayerTimes.png",
+    iconAvif: "/public/assets/Projects/PrayerTimes.avif",
     type: "react",
     name: "Prayer Times for muslims",
     description:
@@ -18,7 +20,8 @@ const projectsData = [
     github: "https://github.com/Ishaaq-21/Prayer-Times-React-App",
   },
   {
-    icon: "/public/assets/Projects/Portfolio.png",
+    iconPng: "/public/assets/Projects/Portfolio.png",
+    iconAvif: "/public/assets/Projects/Portfolio.avif",
     type: "react",
     name: "My Portfolio",
     description:
@@ -27,7 +30,8 @@ const projectsData = [
   },
 
   {
-    icon: "/public/assets/Projects/creative-mini.png",
+    iconPng: "/public/assets/Projects/creative-mini.png",
+    iconAvif: "/public/assets/Projects/creative-mini.avif",
     type: "Html-Css-Js",
     name: "Creative Agency Portfolio",
     description:
@@ -36,7 +40,8 @@ const projectsData = [
     github: "https://github.com/Ishaaq-21/Creative-Agency",
   },
   {
-    icon: "/public/assets/Projects/dash.png",
+    iconPng: "/public/assets/Projects/dash.png",
+    iconAvif: "/public/assets/Projects/dash.avif",
     type: "Html-Css",
     name: "Admin Dashboard Template",
     description:
@@ -45,8 +50,8 @@ const projectsData = [
     github: "https://github.com/Ishaaq-21/Admin-Dashboard",
   },
   {
-    icon: "/public/assets/Projects/master-mini.png",
-
+    iconPng: "/public/assets/Projects/master-mini.png",
+    iconAvif: "/public/assets/Projects/master-mini.avif",
     type: "Html-Css",
     name: "Master Template",
     description:
@@ -55,7 +60,8 @@ const projectsData = [
     github: "https://github.com/Ishaaq-21/Html-Css-Template-master",
   },
   {
-    icon: "/public/assets/Projects/todo.png",
+    iconPng: "/public/assets/Projects/todo.png",
+    iconAvif: "/public/assets/Projects/todo.avif",
     type: "react",
     name: "Todo App",
     description:
@@ -64,7 +70,8 @@ const projectsData = [
     github: "https://github.com/Ishaaq-21/React-TodoApp",
   },
   {
-    icon: "/public/assets/Projects/leon.png",
+    iconPng: "/public/assets/Projects/leon.png",
+    iconAvif: "/public/assets/Projects/leon.avif",
     type: "Html-Css",
     name: "Leon Template",
     description:
@@ -73,7 +80,8 @@ const projectsData = [
     github: "https://github.com/Ishaaq-21/Html-Css-Leon-template",
   },
   {
-    icon: "/public/assets/Projects/kasper-mini.png",
+    iconPng: "/public/assets/Projects/kasper-mini.png",
+    iconAvif: "/public/assets/Projects/kasper-mini.avif",
     type: "Html-Css",
     name: "Kasper Template",
     description:
@@ -82,7 +90,8 @@ const projectsData = [
     github: "https://github.com/Ishaaq-21/Html-Css-Kasper-Template",
   },
   {
-    icon: "/public/assets/Projects/miniJs.png",
+    iconPng: "/public/assets/Projects/miniJs.png",
+    iconAvif: "/public/assets/Projects/miniJs.avif",
     type: "Html-Css-Js",
     name: "Mini-Projects",
     description:

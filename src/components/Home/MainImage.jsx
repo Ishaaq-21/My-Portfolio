@@ -5,11 +5,15 @@ export default function MainImg() {
       rounded-full  ring-8 ring-primary/70 overflow-hidden order-1 md:order-2
       mx-auto -translate-x-5 my-5 md:my-5 mx-auto lg:mx-0 lg:grow-[1]"
     >
-      <img
-        className="w-full h-full "
-        src="/public/assets/MyPic.png"
-        alt="Isaac's Picture"
-      />
+      <picture>
+        <source srcset="public/assets/MyPic.avif" type="image/avif" />
+        <source srcset="/assets/MyPic.png" type="image/png" />
+        <img
+          src="/assets/MyPic.png"
+          alt="Isaac's Picture"
+          className="w-full h-full"
+        />
+      </picture>
     </div>
   );
 }

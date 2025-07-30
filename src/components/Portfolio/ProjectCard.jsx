@@ -1,12 +1,17 @@
 export default function ProjectCard({ project }) {
   return (
     <li className="project-card border-4 border-primary dark:border-primary place-content-center h-[200px] md:h-[240px] max rounded-3xl  overflow-hidden relative cursor-target">
-      <img
-        className="w-full h-full transition duration-500"
-        src={project.icon}
-        alt={`${project.name} project icon`}
-        loading="lazy"
-      />
+      <picture>
+        <source srcSet={project.iconAvif} type="image/avif" />
+        <source srcSet={project.iconPdf} type="image/png" />
+        <img
+          className="w-full h-full transition duration-500"
+          loading="lazy"
+          src={project.iconPdf}
+          alt="Isaac's Picture"
+        />
+      </picture>
+
       <div className="project-description flex flex-col gap-y-3 items-center justify-center text-center bg-black/80 w-full h-full absolute left-0 top-0 px-3 md:px-5 py-4 opacity-0 invisible transition duration-1000">
         <h3 className="text-base md:text-xl text-primary font-bold">
           {project.name}

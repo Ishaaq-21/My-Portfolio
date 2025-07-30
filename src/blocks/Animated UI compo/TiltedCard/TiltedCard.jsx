@@ -97,6 +97,7 @@ export default function TiltedCard({
         <motion.img
           src={imageSrc}
           alt={altText}
+          loading="lazy"
           className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)] w-full h-full shadow-[0_0_10px_1px_#f59e0b] hover:shadow-[0_0_17px_2px_#f59e0b] duration-500 transition"
         />
 
