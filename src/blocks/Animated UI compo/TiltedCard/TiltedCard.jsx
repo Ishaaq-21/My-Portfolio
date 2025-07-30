@@ -1,9 +1,5 @@
-/*
-	Installed from https://reactbits.dev/tailwind/
-*/
-
 import { useRef, useState } from "react";
-import { useMotionValue, useSpring } from "framer-motion";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 
 const springValues = {
   damping: 30,
