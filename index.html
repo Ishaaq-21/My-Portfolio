@@ -10,6 +10,17 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Isaac Portfolio</title>
+    <script>
+      (function () {
+        const theme = localStorage.getItem("theme");
+        if (theme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else if (!theme) {
+          document.documentElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
