@@ -1,8 +1,7 @@
 import Header from "./components/Header/Header";
-
+import MainSections from "./MainSections";
 import TargetCursor from "./blocks/Animated UI compo/TargetCursor/TargetCursor";
 
-import AnimateSectionOnScroll from "./ScrollAnimationContainer";
 import { useEffect, useState } from "react";
 import { MobileScreenContext } from "./components/SharedComponents/Context/MobileScreensContext";
 function App() {
@@ -19,7 +18,7 @@ function App() {
         <TargetCursor spinDuration={3} hideDefaultCursor={true} />
       )}
       <Header></Header>
-      <AnimateSectionOnScroll />
+      <MainSections />
     </MobileScreenContext.Provider>
   );
 }
