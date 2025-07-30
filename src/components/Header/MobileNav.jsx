@@ -1,13 +1,12 @@
-import clsx from "clsx";
 import navItems, { handleNavClick } from "./NavLinks";
 export default function MobileNav({ isOpen }) {
   return (
     <nav
-      className={clsx(
-        "absolute md:hidden w-full pt-6 pb-3 shadow-top left-0 transition-bottom bg-primary-bg transition-all duration-300 rounded-t-lg dark:bg-slate-900",
-
-        isOpen ? "bottom-[43px]" : "-bottom-52"
-      )}
+      className={`
+        absolute md:hidden w-full pt-6 pb-3 shadow-top left-0 transition-bottom bg-primary-bg transition-all duration-300 rounded-t-lg dark:bg-slate-900  ${
+          isOpen ? "bottom-[43px]" : "-bottom-52"
+        }
+      `}
     >
       <ul className="grid grid-cols-3  gap-y-5 place-items-center">
         {navItems.map((link) => {
