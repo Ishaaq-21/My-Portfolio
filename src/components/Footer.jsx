@@ -30,6 +30,7 @@ export default function Footer() {
                   className={`text-2xl md:text-4xl text-subTitle dark:text-zinc-100/80 transition duration-300 cursor-target p-2 ${socialAcc.hoverColor} ${socialAcc.darkHoverColor}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Visit my ${socialAcc.name} profile`}
                 >
                   <i className={socialAcc.icon}></i>
                 </a>

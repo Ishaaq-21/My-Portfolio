@@ -25,6 +25,7 @@ export default function ProjectCard({ project }) {
             href={project.github}
             target="_blank"
             className="hover:scale-125 transition duration-300 cursor-target p-1"
+            aria-label={`View the ${project.name} project on GitHub`} // Add this
           >
             <i className="uil uil-github text-primary text-4xl"></i>
           </a>
@@ -34,6 +35,7 @@ export default function ProjectCard({ project }) {
               href={project.demo}
               target="_blank"
               className="hover:scale-125 transition duration-300 cursor-target p-1"
+              aria-label={`View the live demo for the ${project.name} project`} // Add this
             >
               <i className="uil uil-eye text-primary text-4xl"></i>
             </a>

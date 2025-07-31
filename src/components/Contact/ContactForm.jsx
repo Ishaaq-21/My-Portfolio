@@ -52,6 +52,7 @@ export default function ContactForm() {
             required
             placeholder="Your Name"
             className="cursor-target"
+            autoComplete="name"
           />
         </div>
         <ValidationError prefix="Name" field="name" errors={state.errors} />
@@ -74,6 +75,7 @@ export default function ContactForm() {
             required
             placeholder="Your Email"
             className="cursor-target"
+            autoComplete="email"
           />
         </div>
         <ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -81,7 +83,7 @@ export default function ContactForm() {
         <div className="relative w-full sm:w-80">
           <label
             className="dark:bg-[linear-gradient(to_bottom,_rgb(2_6_23)_50%,_rgb(15_23_42)_50%)] dark:text-white/90"
-            htmlFor="Inquiry"
+            htmlFor="inquiry"
           >
             Your inquiry
           </label>
