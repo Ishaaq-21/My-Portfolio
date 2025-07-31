@@ -12,6 +12,7 @@ export default function MainImg() {
           src="/assets/MyPic.png"
           alt="Isaac's Picture"
           className="w-full h-full"
+          fetchPriority="high"
         />
       </picture>
     </div>

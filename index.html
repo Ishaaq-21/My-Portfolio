@@ -3,6 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/public/assets/webIcon.svg" />
+    <!-- Preload My main profile image  -->
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="/assets/MyPic.png"
+      type="image/png"
+    />
+
+    <!-- Preload the Unicons stylesheet  -->
+    <link
+      rel="preload"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    /></noscript>
+
     <!-- Unicons -->
     <link
       rel="stylesheet"
