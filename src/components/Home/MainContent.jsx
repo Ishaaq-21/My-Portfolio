@@ -8,7 +8,7 @@ export default function MainContent() {
         </h1>
         <div className="hand-container  inline-block">
           <img
-            src="/public/assets/hand.svg"
+            src="/assets/hand.svg"
             className="waving-hand w-8 md:w-10 lg:w-12"
             alt="hand image"
           />
