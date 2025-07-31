@@ -7,7 +7,7 @@ export default function Footer() {
         <h2 className="w-fit dark:text-zinc-100 mx-auto text-title text-2xl md:text-4xl mb-10 font-bold">
           Isaaq <span className="text-primary">Hk</span>
         </h2>
-        <ul className="section flex justify-center md:justify-around md:w-3/4 mb-8 mx-auto place-items-center gap-5">
+        <ul className="section flex justify-center md:justify-around md:w-3/4 mb-8 mx-auto place-items-center gap-2 md:gap-5">
           {sectionNames.map((name) => {
             return (
               <li key={name}>
