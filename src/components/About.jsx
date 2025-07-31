@@ -55,8 +55,8 @@ function AboutSubContent() {
         UX, and client goals.
       </p>
       <a
-        href="/public/MyCv.pdf"
-        download={"/public/MyCv.pdf"}
+        href="/MyCv.pdf"
+        download={"/MyCv.pdf"}
         className="main-btn text-xl cursor-target"
         aria-label="Download CV"
       >
