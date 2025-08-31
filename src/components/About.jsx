@@ -80,7 +80,7 @@ export default function About() {
         {mobileScreen ? (
           <MobileImg />
         ) : (
-          <TiltedCard imageSrc={"/assets/MyPic.png"} />
+          <TiltedCard imageSrc={"/assets/MySecPic.png"} />
         )}
         <AboutSubContent />
       </div>
